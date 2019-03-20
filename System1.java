@@ -1,7 +1,5 @@
-
-
 public class System1 implements System {
-    public double reliability(Resistor... resistors) {
+    public double reliability(Resistor[] resistors) {
         double totalFailureRate = 1;
         for (Resistor res : resistors) {
             totalFailureRate *= (1 - Math.exp(-res.getFailureRate() * 87600));
