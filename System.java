@@ -1,3 +1,3 @@
 public interface System {
-    public double reliability(Resistor... resistors);
+    public double reliability(Resistor[] resistors);
 }
