@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class SystemTest {
     
-    public static void main() {
+    public static void main(String[] args) {
 
         List<Resistor> resistors = new ArrayList<Resistor>();
         Scanner sc = new Scanner(System.in);
