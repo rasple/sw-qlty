@@ -1,4 +1,4 @@
-public class System1 implements System {
+public class System1 implements SystemInterface {
     public double reliability(Resistor[] resistors) {
         double totalFailureRate = 1;
         for (Resistor res : resistors) {
