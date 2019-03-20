@@ -1,6 +1,10 @@
 public class Resistor {
     private double failureRate;
 
+    Resistor(double failureRate) {
+        this.failureRate = failureRate;
+    }
+
     /**
      * @return the failureRate
      */
