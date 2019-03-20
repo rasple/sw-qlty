@@ -1,3 +1,5 @@
+package src;
+
 public class Resistor {
     private double failureRate;
 

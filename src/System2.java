@@ -1,3 +1,5 @@
+package src;
+
 public class System2 implements SystemInterface {
     public double reliability(Resistor[] resistors) {
         double totalFailureRate=1;
