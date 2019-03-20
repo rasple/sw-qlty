@@ -1,5 +1,5 @@
-public class System1 {
-    static double reliability() {
-        return 0.0;
+public class System1 implements System {
+    public double reliability(Resistor... resistors) {
+        return 0;
     }
 }

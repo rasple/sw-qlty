@@ -1,5 +1,4 @@
 public class Resistor {
-    private double resistance;
     private double failureRate;
 
     /**
@@ -7,20 +6,6 @@ public class Resistor {
      */
     public double getFailureRate() {
         return failureRate;
-    }
-
-    /**
-     * @return the resistance
-     */
-    public double getResistance() {
-        return resistance;
-    }
-
-    /**
-     * @param resistance the resistance to set
-     */
-    public void setResistance(double resistance) {
-        this.resistance = resistance;
     }
 
     /**
