@@ -1,5 +1,5 @@
 package src;
 
 public interface SystemInterface {
-    public double reliability(Resistor[] resistors);
+    public double reliability(Component[] resistors);
 }

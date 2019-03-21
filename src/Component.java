@@ -1,9 +1,9 @@
 package src;
 
-public class Resistor {
+public class Component {
     private double failureRate;
 
-    Resistor(double failureRate) {
+    Component(double failureRate) {
         this.failureRate = failureRate;
     }
 

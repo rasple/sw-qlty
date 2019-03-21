@@ -7,17 +7,16 @@ import java.util.Scanner;
 public class SystemTest {
 
     public static void main(String[] args) {
-        System.out.println("Hallo Welt");
-        List<Resistor> resistors = new ArrayList<Resistor>();
+        List<Component> resistors = new ArrayList<Component>();
         Scanner sc = new Scanner(System.in);
        
 
         do{
             System.out.println("Neue Komponente!\nBitte Ausfallwahrscheinlichkeit eingeben: ");
-            Resistor res = new Resistor(sc.nextDouble());
+            Component res = new Component(sc.nextDouble());
             resistors.add(res);
             System.out.println("Weitere Komponenten anlegen? (y/n)");
-        } while(sc.nextLine().matches("y"));
+        } while(sc.next().matches("y"));
 
         sc.close();
         //System1 system1 = new System1();
