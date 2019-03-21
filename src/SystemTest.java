@@ -15,10 +15,14 @@ public class SystemTest {
         do {
             System.out.println("Neue Komponente!\nBitte Ausfallwahrscheinlichkeit eingeben: ");
             try {
-                Component res = new Component(sc.nextDouble());
+                Double prob = sc.nextDouble();
+                if(prob > 1 || prob < 0){
+                    System.out.println("Fehler: Eine Wahrscheinlichkeit muss zwischen 0 und 1 liegen!");
+                }
+                Component res = new Component(prob);
                 components.add(res);
             } catch (Exception e) {
-                System.out.println("Ungültige Eingabe!");
+                System.out.println("Fehler: Ungültige Eingabe!");
                 continue;
             }
             System.out.println("Weitere Komponenten anlegen? (y/n)");
@@ -38,7 +42,7 @@ public class SystemTest {
 
         for (SystemInterface sys : systems) {
             double rel = sys.reliability(comps);
-            String name = sys.getClass().getName();
+            String name = sys.getClass().getCanonicalName();
             System.out.println(name + ": " + rel);
             reliabilities.put(name, rel);
         }
