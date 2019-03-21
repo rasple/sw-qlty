@@ -47,7 +47,5 @@ public class SystemTest {
             System.out.println(name + ": " + rel);
             reliabilities.put(name, rel);
         }
-
-
     }
 }
