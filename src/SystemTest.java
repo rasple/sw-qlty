@@ -16,7 +16,7 @@ public class SystemTest {
             Component res = new Component(sc.nextDouble());
             resistors.add(res);
             System.out.println("Weitere Komponenten anlegen? (y/n)");
-        } while(sc.next().matches("y"));
+        } while(sc.next().matches("[yY]"));
 
         sc.close();
         //System1 system1 = new System1();
